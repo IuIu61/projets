@@ -5,49 +5,69 @@
     <meta charset="UTF-8">
     <title>Les Deux Tours</title>
     <link rel="stylesheet" href="css/film2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1 class="main-title">Les Deux Tours</h1>
-        <p class="sub-title"><a href="lotr-trilogy.html" style="color:#e0c96b;"> ← Retour à la trilogie</a></p>
+        <p class="sub-title">
+          <a href="index.html" class="retro-link"> ← Retour à la trilogie</a>
+        </p>
     </header>
     <main>
         <div class="movie-card">
-            <div class="poster-bg">
+            <div class="poster-top">
                 <img src="https://upload.wikimedia.org/wikipedia/fr/4/4e/Le_Seigneur_des_anneaux_-_Les_deux_tours_%28film%29.png"
                     alt="Les Deux Tours">
             </div>
-            <div class="movie-content">
-                <ul class="details">
-                    <li><strong>Année :</strong> 2002</li>
-                    <li><strong>Genre :</strong> Fantastique, Aventure</li>
-                    <li><strong>Réalisateur :</strong> Peter Jackson</li>
-                </ul>
-                <p class="summary">
-                    Frodon et Sam poursuivent leur voyage vers le Mordor, guidés par Gollum, tandis qu'Aragorn, Legolas
-                    et Gimli affrontent la bataille du Gouffre de Helm.<br>
-                    <b>Anecdotes :</b> Les scènes de bataille du Gouffre de Helm ont mobilisé plus de 500 figurants.<br>
-                    <b>Bande annonce :</b> <a href="https://www.youtube.com/watch?v=LbfMDwc4azU" target="_blank">Voir
-                        sur YouTube</a>
-                </p>
-                <div class="cast">
-                    <strong>Distribution :</strong>
-                    <ul>
-                        <li>Elijah Wood (Frodon)</li>
-                        <li>Ian McKellen (Gandalf)</li>
-                        <li>Viggo Mortensen (Aragorn)</li>
-                        <li>Orlando Bloom (Legolas)</li>
-                        <li>Sean Bean (Boromir)</li>
-                    </ul>
+            <div class="movie-content movie-columns">
+
+                <div class="col">
+                    <section class="character-section" id="frodon-sam-gollum">
+                        <h3>Frodon, Sam & Gollum</h3>
+                        <p>
+                        Après la séparation de la Communauté, Frodon et Sam poursuivent seuls la quête pour détruire l’Anneau Unique au Mordor. Sur leur route, ils rencontrent Gollum, une créature déchirée par son obsession pour l’Anneau. Gollum accepte de les guider à travers les marais des Morts et les Portes Noires de Mordor.<br><br>
+                        Frodon commence à sentir la lourdeur de l’Anneau mais, malgré les suspicions de Sam à l'égard de Gollum, il croit en la possibilité que Gollum puisse changer. Le trio contourne la porte principale de Mordor et suit un chemin secret suggéré par Gollum. Capturés par Faramir, capitaine du Gondor, ils réussissent à convaincre celui-ci de les laisser poursuivre leur mission. À la fin du film, Gollum, déçu par la trahison de Frodon face à Faramir, décide de mener les hobbits vers un piège : la tanière de l’effrayante araignée, Arachnée.
+                        </p>
+                    </section>
+                    <hr class="story-separator">
+
+                    <section class="character-section" id="aragon-legolas-gimli">
+                        <h3>Aragorn, Legolas & Gimli</h3>
+                        <p>
+                        Après la capture de Merry et Pippin, Aragorn, Legolas et Gimli se lancent dans une poursuite acharnée des Uruk-hai. Leur course les mène jusqu’au Rohan, un royaume humain assailli par les créatures de Saroumane et trahi par le conseiller Gríma.<br><br>
+                        Avec l’aide de Gandalf, ils libèrent le roi Théoden de son sort et protègent le peuple du Rohan. Ils réfugient la population dans la forteresse du Gouffre de Helm, alors que l’armée de Saroumane, composée d’Uruk-hai et d’orcs, s’apprête à l’assaillir.<br><br>
+                        Après une nuit désespérée de combats, Gandalf revient au lever du soleil avec les cavaliers d’Éomer. Leur intervention renverse le cours de la bataille et sauve les survivants, redonnant au Rohan la force de résister.
+                        </p>
+                    </section>
                 </div>
+
+                <div class="col">
+                    <section class="character-section" id="merry-pippin-ents">
+                        <h3>Merry & Pippin, et les Ents</h3>
+                        <p>
+                        Les deux jeunes hobbits réussissent à s’échapper des Uruk-hai et trouvent refuge dans la forêt de Fangorn. Ils y rencontrent Sylvebarbe, un Ent, gardien ancestral de la forêt. D’abord hésitants, les Ents sont convaincus par Merry et Pippin de se mobiliser contre Saroumane, qui ravage la nature pour son armée.<br><br>
+                        Les Ents attaquent la forteresse d’Isengard, détruisent les machines de guerre et inondent la tour de Saroumane, coupant sa puissance. Les hobbits assistent, émerveillés, à la victoire des arbres et de la nature contre le mal industriel.
+                        </p>
+                    </section>
+                    <hr class="story-separator">
+
+                    <section class="character-section" id="gandalf-rohan">
+                        <h3>Gandalf et le Rohan</h3>
+                        <p>
+                        S’étant confronté au Balrog et revenu sous la forme de Gandalf le Blanc, il aide à libérer le roi Théoden du joug de Saroumane, porte secours au Rohan et orchestre la défense du Gouffre de Helm. Sa sagesse et ses pouvoirs influencent le destin du royaume et redonnent confiance aux peuples libres.<br><br>
+                        À l’issue de la bataille, Gandalf annonce que la guerre contre Sauron est sur le point de commencer et que l’espoir subsiste tant que tous sont unis dans la lutte contre le mal.<br>
+                        </p>
+                    </section>
+                </div>
+
             </div>
         </div>
     </main>
     <footer>
-        <p class="footer-text">© 2025 - Détail du film “Les Deux Tours”</p>
+        <p class="footer-text">© 2025 - Histoire des deux tours</p>
     </footer>
 </body>
-
 </html>
-film2.html
