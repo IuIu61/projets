@@ -1,7 +1,17 @@
-* {
-    font-family: 'MedievalSharp', cursive, serif;
-}
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+/* Police principale */
+body,
+.main-title,
+h1,
+h2,
+h3,
+.movie-content,
+.character-section p,
+.footer-text {
+    font-family: 'Cinzel', serif !important;
+}
 body {
     background-image: url('https://img1.wallspic.com/crops/9/2/8/8/2/128829/128829-le_seigneur_des_anneaux-art_fantastique-le_travail_de_lart-arts_creatifs-falaise-3840x2160.jpg');
     background-size: cover;
