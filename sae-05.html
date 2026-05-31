@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAÉ 1.05 — Portfolio R&T</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">RT Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li class="nav-sae-menu">
+        <button class="nav-sae-trigger">
+          SAÉ
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-sae-dropdown">
+          <a href="saes.html" class="dd-all">↗ Toutes les SAÉ</a>
+          <div class="dd-sep"></div>
+          <a href="sae-01.html"><span class="dd-num">1.01</span>Hygiène &amp; Cybersécurité</a>
+          <a href="sae-02.html"><span class="dd-num">1.02</span>Réseaux informatiques</a>
+          <a href="sae-03.html"><span class="dd-num">1.03</span>Dispositif de transmission</a>
+          <a href="sae-04.html"><span class="dd-num">1.04</span>Se présenter sur Internet</a>
+          <a href="sae-05.html"><span class="dd-num">1.05</span>Traiter des données</a>
+        </div>
+      </li>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="index.html#bilans">Bilans</a></li>
+      <li><a href="index.html#presentation">Profil</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="sae-page-hero">
+    <div class="container">
+      <div class="sae-page-eyebrow">
+        <span class="sae-page-num">SAÉ 1.05</span>
+        <span class="sae-page-badge">Compétence RT3 · Coeff. 35</span>
+      </div>
+      <h1 class="sae-page-title">Traiter des données</h1>
+      <p class="sae-page-sub">Développement en binôme d'un script Python pour collecter automatiquement des données via une API REST OpenStreetMap, les traiter statistiquement et produire un rapport exporté au format Markdown/HTML.</p>
+      <div class="sae-page-ac">
+        <span class="ac-tag">Python</span>
+        <span class="ac-tag">API REST</span>
+        <span class="ac-tag">JSON / XML</span>
+        <span class="ac-tag">OpenStreetMap</span>
+        <span class="ac-tag">Markdown</span>
+        <span class="ac-tag">requests</span>
+        <span class="ac-tag">Statistiques</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="sae-page-main">
+    <div class="container">
+      <div class="sae-page-grid">
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">01</div>
+          <div class="sae-section-content">
+            <h2>Contexte &amp; Objectifs</h2>
+            <p><strong>Problématique professionnelle :</strong> Le professionnel R&T est régulièrement amené à traiter des données issues du système d'information de l'entreprise (état des équipements, utilisateurs, logs réseau). Ces données brutes doivent être traitées, nettoyées et présentées de façon synthétique, idéalement de manière automatisée via des scripts.</p>
+            <p><strong>Mission confiée :</strong> En binôme, créer un programme Python capable de : (1) récolter des données via l'API REST OpenStreetMap/Overpass, (2) mettre en forme les données selon les informations souhaitées, (3) effectuer des traitements statistiques, (4) exporter les résultats au format Markdown, puis en HTML via la bibliothèque Python <code>markdown</code>.</p>
+            <p><strong>Organisation :</strong> Projet en binôme sur 20h en autonomie, avec deux points d'étape évalués (mi-projet et fin de projet). Note finale = moyenne entre note de projet et note de suivi.</p>
+          </div>
+        </section>
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">02</div>
+          <div class="sae-section-content">
+            <h2>Compétences techniques mobilisées</h2>
+            <ul class="sae-ac-list">
+              <li><strong>API REST et protocole HTTP :</strong> Compréhension du modèle requête/réponse REST, codes de statut HTTP (200, 404, 500…), paramètres d'URL, utilisation de la bibliothèque <code>requests</code> pour les appels HTTP en Python.</li>
+              <li><strong>Overpass API (OSM) :</strong> Langage de requête Overpass QL pour interroger la base de données OpenStreetMap, extraction de nœuds et de relations géographiques avec filtres par clé/valeur (<code>amenity</code>, <code>shop</code>, etc.).</li>
+              <li><strong>Formats JSON et XML :</strong> Parsing et manipulation de structures imbriquées avec <code>json.loads()</code> et <code>xml.etree.ElementTree</code> en Python.</li>
+              <li><strong>Programmation Python :</strong> Listes, dictionnaires, fonctions, gestion de fichiers, calculs statistiques (moyenne, médiane, fréquences), organisation du code en modules.</li>
+              <li><strong>Format Markdown :</strong> Syntaxe de balisage légère (titres, gras, listes, tableaux), compilation en HTML via la bibliothèque Python <code>markdown</code>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">03</div>
+          <div class="sae-section-content">
+            <h2>Ma contribution &amp; tâches réalisées</h2>
+            <p><strong>Choix du jeu de données :</strong> Mon binôme et moi avons choisi d'analyser la répartition des équipements de restauration (restaurants, cafés, fast-food) dans la ville de Caen. Ce sujet nous permettait d'exploiter des données riches et structurées sur OSM, avec des attributs variés (nom, type de cuisine, horaires).</p>
+            <p><strong>Module de collecte :</strong> J'ai développé le module Python de collecte en écrivant une requête Overpass QL pour extraire tous les nœuds avec le tag <code>amenity=restaurant</code> ou <code>amenity=cafe</code> dans un rayon de 5 km autour du centre de Caen. La bibliothèque <code>requests</code> effectue l'appel HTTP, et la réponse JSON est parsée et filtrée.</p>
+            <p><strong>Module de traitement :</strong> Mon binôme a développé les fonctions de statistiques descriptives (répartition par type de cuisine, nombre d'établissements par quartier) et j'ai créé le module de génération du rapport Markdown avec tableaux et listes formatés.</p>
+            <p><strong>Export HTML :</strong> Le script final lit le fichier <code>.md</code> généré et utilise la bibliothèque Python <code>markdown</code> pour produire un fichier HTML autonome avec un CSS inline minimal pour la lisibilité.</p>
+            <p><strong>Points d'étape :</strong> Au premier point d'étape, nous avions le module de collecte fonctionnel et les premières statistiques. Au second, le rapport complet Markdown et HTML était généré automatiquement.</p>
+          </div>
+        </section>
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">04</div>
+          <div class="sae-section-content">
+            <h2>Traces &amp; livrables</h2>
+            <ul class="sae-traces-list">
+              <li>Script Python commenté — module de collecte (<code>collect.py</code>), traitement (<code>stats.py</code>), export (<code>report.py</code>)</li>
+              <li>Fichier rapport généré au format Markdown (<code>rapport.md</code>)</li>
+              <li>Fichier HTML produit par compilation (<code>rapport.html</code>)</li>
+              <li>Évaluations des deux points d'étape intermédiaires</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sae-section highlight-section reveal">
+          <div class="sae-section-label">05</div>
+          <div class="sae-section-content">
+            <h2>Analyse réflexive</h2>
+            <p><strong>Difficultés rencontrées :</strong> La structure JSON renvoyée par l'API Overpass était plus complexe que prévu — les données sont encapsulées dans un tableau <code>elements</code> avec des nœuds, des chemins et des relations. Il fallait filtrer uniquement les nœuds avec des coordonnées valides. Un autre problème était la gestion des données manquantes : beaucoup d'établissements n'avaient pas de tag <code>cuisine</code>, ce qui nécessitait de traiter les cas <code>None</code> sans planter le script.</p>
+            <p><strong>Solutions apportées :</strong> J'ai d'abord testé mes requêtes Overpass directement sur <a href="https://overpass-turbo.eu" style="color:var(--accent)">overpass-turbo.eu</a> avant de les intégrer en Python, ce qui m'a permis de visualiser la structure des données retournées. Pour les valeurs manquantes, j'ai ajouté une valeur par défaut <code>"Non renseigné"</code> qui permettait quand même d'inclure ces établissements dans les statistiques.</p>
+            <p><strong>Ce que j'ai appris :</strong> Cette SAÉ m'a permis de comprendre concrètement le modèle REST et son usage dans les systèmes d'information, d'automatiser le traitement de données en Python, et de produire des rapports lisibles à la fois par des humains et des machines (Markdown/HTML). La coordination en binôme sur un projet de code m'a appris à découper le travail en modules indépendants et à définir des interfaces claires entre eux.</p>
+            <p><strong>Positionnement personnel :</strong> Cette SAÉ m'a donné confiance en ma capacité à développer des scripts utiles. Je maîtrise les API REST et le traitement JSON, mais je dois encore progresser sur la structuration du code Python en modules réutilisables et sur les tests unitaires pour fiabiliser mes scripts.</p>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="sae-preuves reveal">
+        <div class="sae-preuves-title">Preuves &amp; traces</div>
+        <div class="preuves-grid">
+
+          <div class="preuve-card">
+            <div class="preuve-placeholder">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Capture d'écran à ajouter</span>
+            </div>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Code source</div>
+              <div class="preuve-card-title">Script Python — collecte Overpass API</div>
+              <div class="preuve-card-desc">
+                À ajouter : une capture de votre éditeur de code (VS Code, Thonny…) montrant le module de collecte Python avec la requête Overpass QL et le parsing JSON, ou un lien vers votre dépôt Git.
+              </div>
+            </div>
+          </div>
+
+          <div class="preuve-card">
+            <div class="preuve-placeholder">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Capture d'écran à ajouter</span>
+            </div>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Rapport généré</div>
+              <div class="preuve-card-title">Rapport HTML produit automatiquement</div>
+              <div class="preuve-card-desc">
+                À ajouter : une capture du rapport HTML final généré par votre script Python à partir du fichier Markdown, affichant les statistiques sur les équipements OSM analysés (tableaux, listes, résultats).
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sae-page-nav-btns">
+        <a href="sae-04.html" class="btn-secondary">← SAÉ 1.04</a>
+        <a href="saes.html" class="btn-primary">Retour aux SAÉ <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RT Portfolio</span>
+      <span class="footer-mention">IUT Grand Ouest Normandie · BUT Réseaux & Télécommunications · 2024–2025</span>
+      <span class="footer-copy">Portfolio académique</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

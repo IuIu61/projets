@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAÉ 1.03 — Portfolio R&T</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">RT Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li class="nav-sae-menu">
+        <button class="nav-sae-trigger">SAÉ
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-sae-dropdown">
+          <a href="saes.html" class="dd-all">↗ Toutes les SAÉ</a>
+          <div class="dd-sep"></div>
+          <a href="sae-01.html"><span class="dd-num">1.01</span>Hygiène &amp; Cybersécurité</a>
+          <a href="sae-02.html"><span class="dd-num">1.02</span>Réseaux informatiques</a>
+          <a href="sae-03.html"><span class="dd-num">1.03</span>Dispositif de transmission</a>
+          <a href="sae-04.html"><span class="dd-num">1.04</span>Se présenter sur Internet</a>
+          <a href="sae-05.html"><span class="dd-num">1.05</span>Traiter des données</a>
+        </div>
+      </li>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="index.html#bilans">Bilans</a></li>
+      <li><a href="index.html#presentation">Profil</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="sae-page-hero">
+    <div class="container">
+      <div class="sae-page-eyebrow">
+        <span class="sae-page-num">SAÉ 1.03</span>
+        <span class="sae-page-badge">Compétence RT2 · Coeff. 36</span>
+      </div>
+      <h1 class="sae-page-title">Découvrir un dispositif<br/><em>de transmission</em></h1>
+      <p class="sae-page-sub">Mesures expérimentales sur câbles cuivre coaxial, Ethernet et fibre optique FTTH : DTF, NVP en régime impulsionnel et photométrie.</p>
+      <div class="sae-page-ac">
+        <span class="ac-tag">Fibre optique FTTH</span>
+        <span class="ac-tag">Câble coaxial RG58</span>
+        <span class="ac-tag">Analyse DTF</span>
+        <span class="ac-tag">NVP</span>
+        <span class="ac-tag">GBF / Oscilloscope</span>
+        <span class="ac-tag">Photométrie</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="sae-context">
+    <div class="container">
+      <div class="sae-context-inner">
+        <div class="sae-context-item">
+          <div class="sae-context-label">Problématique professionnelle</div>
+          <div class="sae-context-text">Le technicien R&T intervient régulièrement sur le terrain pour qualifier des supports de transmission. Cette SAÉ reproduit les mesures qu'effectue un certificateur de câbles, sans disposer du matériel professionnel complet.</div>
+        </div>
+        <div class="sae-context-item">
+          <div class="sae-context-label">Supports étudiés</div>
+          <div class="sae-context-text">Câble coaxial RG58 (NVP 66 %) · Câble Ethernet Cat. 5e (NVP à déterminer par étalon 2 m) · Liaison fibre optique FTTH (connecteurs SC/APC)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="sae-body">
+    <div class="container">
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">01</span>
+          <h2 class="sae-block-title">Méthodologie utilisée</h2>
+        </div>
+        <div class="methodo-steps">
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Mesure DTF sur câble coaxial RG58</div>
+              <div class="methodo-step-desc">Connexion du câble coaxial à l'analyseur DTF, saisie de la NVP de 66 % (valeur constructeur du RG58), lancement de la mesure. L'analyseur affiche la distance à chaque discontinuité et à l'extrémité ouverte du câble, donnant directement la longueur.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Vérification en régime impulsionnel (GBF + oscilloscope)</div>
+              <div class="methodo-step-desc">Configuration du GBF en mode impulsion (largeur &lt; 100 ns), observation sur l'oscilloscope de l'impulsion aller et de son écho retour. Mesure du temps aller-retour Δt, puis calcul : L = (NVP × c × Δt) / 2. Résultat comparé à la mesure DTF pour validation croisée.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Détermination de la NVP du câble Ethernet</div>
+              <div class="methodo-step-desc">Mesure sur le câble étalon de 2 m connu : relevé du temps de propagation, calcul de la NVP = (2 × L) / (c × Δt). Application de cette NVP calculée (~69 %) au câble Ethernet inconnu pour en déterminer la longueur par DTF puis vérification en régime impulsionnel.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Mesure photométrique fibre optique</div>
+              <div class="methodo-step-desc">Câblage de la liaison FTTH attribuée (nettoyage des connecteurs SC/APC au kit dédié), injection de la source optique calibrée, mesure de la puissance reçue au photomètre. Calcul : Atténuation (dB) = P_émis (dBm) − P_reçu (dBm). Vérification que le budget optique est dans les normes FTTH.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Rédaction de la fiche de synthèse A3</div>
+              <div class="methodo-step-desc">Élaboration d'une fiche manuscrite A3 recto/verso regroupant les formules clés (v = NVP × c, L = v × t/2, Att = P_émis − P_reçu), les schémas de câblage et la procédure de certification. Cette fiche était autorisée lors du QCM final.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">02</span>
+          <h2 class="sae-block-title">Problèmes rencontrés &amp; solutions apportées</h2>
+        </div>
+        <div class="pb-sol-grid">
+          <div class="pb-col">
+            <div class="pb-col-header header-problem">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Problèmes
+            </div>
+            <div class="pb-items">
+              <div class="pb-item" data-n="01">
+                <strong>Résultat DTF incohérent avec le régime impulsionnel</strong>
+                Les deux méthodes donnaient des longueurs différentes de plus de 10 % sur le câble coaxial, ce qui indiquait une erreur dans l'une des deux mesures.
+              </div>
+              <div class="pb-item" data-n="02">
+                <strong>Atténuation fibre anormalement élevée</strong>
+                La première mesure photométrique donnait une atténuation de 8 dB, bien au-delà du budget FTTH acceptable, ce qui signalait un problème de câblage.
+              </div>
+            </div>
+          </div>
+          <div class="pb-col">
+            <div class="pb-col-header header-solution">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Solutions
+            </div>
+            <div class="pb-items">
+              <div class="pb-item" data-n="01">
+                <strong>Mauvaise lecture du temps sur l'oscilloscope</strong>
+                J'avais mesuré le temps de l'impulsion aller au lieu du temps aller-retour. En relisant le protocole et en mesurant correctement le Δt entre les deux fronts montants (aller et écho), les deux résultats ont convergé à moins de 2 % d'écart.
+              </div>
+              <div class="pb-item" data-n="02">
+                <strong>Connecteur SC/APC mal orienté</strong>
+                Les connecteurs à angle (APC) ont une orientation physique obligatoire — un connecteur retourné à 180° introduit une perte énorme. Après avoir nettoyé et correctement orienté tous les connecteurs, l'atténuation est retombée à 2,8 dB, dans les normes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">03</span>
+          <h2 class="sae-block-title">Ce que j'ai appris &amp; bilan</h2>
+        </div>
+        <div class="bilan-chips">
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">SAVOIR</span>
+            <div class="bilan-chip-text"><strong>Propriétés physiques des supports de transmission</strong>Compréhension concrète de la NVP, de l'atténuation linéique et de leur impact sur les performances et les distances maximales d'un réseau.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">FAIRE</span>
+            <div class="bilan-chip-text"><strong>Utilisation des appareils de mesure terrain</strong>Maîtrise de l'analyseur DTF, du GBF + oscilloscope en régime impulsionnel et du photomètre fibre — outils directement utilisés en certification de câblage professionnel.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">POSTURE</span>
+            <div class="bilan-chip-text"><strong>Démarche de validation croisée</strong>Apprendre à ne pas se fier à une seule mesure : comparer les résultats de deux méthodes différentes pour détecter les erreurs et garantir la fiabilité des résultats.</div>
+          </div>
+        </div>
+        <div class="niveau-bar-wrap">
+          <span class="niveau-label">Niveau RT2</span>
+          <div class="niveau-bar"><div class="niveau-fill" style="width:58%"></div></div>
+          <span class="niveau-pct">Satisfaisant</span>
+          <span class="niveau-comment">Bonne maîtrise des mesures sur supports cuivre et fibre. Les transmissions hertziennes (Wi-Fi, 4G/5G), prévues en 2ème année, restent à découvrir.</span>
+        </div>
+      </div>
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">04</span>
+          <h2 class="sae-block-title">Preuves &amp; livrables</h2>
+        </div>
+        <div class="preuves-grid">
+          <div class="preuve-card">
+            <iframe class="preuve-card-pdf" src="compte_rendu_cuivre.pdf" title="Compte rendu cuivre"></iframe>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Rapport de mesures · Cuivre</div>
+              <div class="preuve-card-title">Compte rendu — câble coaxial &amp; Ethernet</div>
+              <div class="preuve-card-desc">Rapport complet des mesures sur câbles cuivre : relevés DTF sur câble coaxial RG58, calcul de NVP du câble Ethernet et vérification en régime impulsionnel. Concordance des deux méthodes.</div>
+            </div>
+          </div>
+          <div class="preuve-card">
+            <img src="photo_montage.png" alt="Montage fibre optique et mesure photomètre" class="preuve-card-img" />
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Mesures fibre optique · Liaison L5 · 13/01/2026</div>
+              <div class="preuve-card-title">Photo du montage FTTH — mesure photomètre VIAVI</div>
+              <div class="preuve-card-desc">Câblage de la liaison fibre FTTH (liaison L5) sur boîtier de brassage GPON. Mesure photomètre VIAVI OLP-35 à 1550 nm : P<sub>ref</sub> = −13,8 dBm · P<sub>mes</sub> = −18,72 dBm · Atténuation = <strong>4,92 dB</strong>.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sae-page-nav-btns">
+        <a href="sae-02.html" class="btn-secondary">← SAÉ 1.02</a>
+        <a href="sae-04.html" class="btn-primary">SAÉ 1.04 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RT Portfolio</span>
+      <span class="footer-mention">IUT Grand Ouest Normandie · BUT Réseaux &amp; Télécommunications · 2024–2025</span>
+      <span class="footer-copy">Portfolio académique</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

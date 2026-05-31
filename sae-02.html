@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAÉ 1.02 — Portfolio R&T</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">RT Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li class="nav-sae-menu">
+        <button class="nav-sae-trigger">SAÉ
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-sae-dropdown">
+          <a href="saes.html" class="dd-all">↗ Toutes les SAÉ</a>
+          <div class="dd-sep"></div>
+          <a href="sae-01.html"><span class="dd-num">1.01</span>Hygiène &amp; Cybersécurité</a>
+          <a href="sae-02.html"><span class="dd-num">1.02</span>Réseaux informatiques</a>
+          <a href="sae-03.html"><span class="dd-num">1.03</span>Dispositif de transmission</a>
+          <a href="sae-04.html"><span class="dd-num">1.04</span>Se présenter sur Internet</a>
+          <a href="sae-05.html"><span class="dd-num">1.05</span>Traiter des données</a>
+        </div>
+      </li>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="index.html#bilans">Bilans</a></li>
+      <li><a href="index.html#presentation">Profil</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="sae-page-hero">
+    <div class="container">
+      <div class="sae-page-eyebrow">
+        <span class="sae-page-num">SAÉ 1.02</span>
+        <span class="sae-page-badge">Compétence RT1 · Coeff. 31</span>
+      </div>
+      <h1 class="sae-page-title">S'initier aux réseaux<br/><em>informatiques</em></h1>
+      <p class="sae-page-sub">Déploiement d'un réseau d'entreprise complet : adressage IPv4, VLANs, commutateurs Cisco, routage statique et serveur Debian multi-services.</p>
+      <div class="sae-page-ac">
+        <span class="ac-tag">Plan IPv4</span>
+        <span class="ac-tag">VLAN</span>
+        <span class="ac-tag">RSTP / EtherChannel</span>
+        <span class="ac-tag">Cisco IOS</span>
+        <span class="ac-tag">Routage statique</span>
+        <span class="ac-tag">Debian</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="sae-context">
+    <div class="container">
+      <div class="sae-context-inner">
+        <div class="sae-context-item">
+          <div class="sae-context-label">Problématique professionnelle</div>
+          <div class="sae-context-text">Avant toute intervention sur une infrastructure réseau d'entreprise, il faut en comprendre les constituants et leurs interactions. Cette SAÉ reproduit la mise en service d'un réseau d'entreprise complet à partir d'un schéma de dépannage.</div>
+        </div>
+        <div class="sae-context-item">
+          <div class="sae-context-label">Équipements utilisés</div>
+          <div class="sae-context-text">Cisco Catalyst 2960 (L2) × 2 · Cisco Catalyst 3560 (L2/L3) · Routeur Cisco 2911 · VMs Debian sur Proxmox · Câblage RJ45 en salle de TP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="sae-body">
+    <div class="container">
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">01</span>
+          <h2 class="sae-block-title">Méthodologie utilisée</h2>
+        </div>
+        <div class="methodo-steps">
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Conception du plan d'adressage IPv4</div>
+              <div class="methodo-step-desc">Avant de toucher un câble, j'ai conçu le plan d'adressage complet sur papier : identification des VLANs nécessaires (données, management, serveurs), calcul des sous-réseaux avec VLSM, attribution des plages et des passerelles. Ce tableau a servi de référence à toute l'équipe pendant le projet.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Câblage et configuration des commutateurs (2960)</div>
+              <div class="methodo-step-desc">Configuration des ports en mode access ou trunk selon le schéma, création des VLANs dans la base de données, activation du RSTP avec les bonnes priorités pour maîtriser le Root Bridge, et mise en place de la sécurité des ports (<code>port-security</code>, <code>BPDU Guard</code>).</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Routage inter-VLAN sur le Catalyst 3560</div>
+              <div class="methodo-step-desc">Création des interfaces VLAN virtuelles (SVI) sur le 3560 avec les adresses de passerelle, activation du routage IP (<code>ip routing</code>), et configuration de l'EtherChannel entre les deux 2960 en mode LACP pour l'agrégation de liens.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Installation et configuration du serveur Debian</div>
+              <div class="methodo-step-desc">Déploiement d'une VM Debian sous Proxmox (deux disques, deux interfaces réseau). Configuration d'Apache2 avec un vhost, vsftpd en mode passif, BIND9 comme résolveur DNS cache et tftpd-hpa. Accès SSH configuré par clé publique/privée.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Tests et validation</div>
+              <div class="methodo-step-desc">Vérification méthodique avec les commandes <code>show</code> IOS (<code>show vlan brief</code>, <code>show interfaces trunk</code>, <code>show etherchannel summary</code>, <code>show ip route</code>). Ping inter-VLAN pour valider le routage, capture Wireshark pour analyser le trafic.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">02</span>
+          <h2 class="sae-block-title">Problèmes rencontrés &amp; solutions apportées</h2>
+        </div>
+        <div class="pb-sol-grid">
+          <div class="pb-col">
+            <div class="pb-col-header header-problem">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Problèmes
+            </div>
+            <div class="pb-items">
+              <div class="pb-item" data-n="01">
+                <strong>Pas de routage inter-VLAN</strong>
+                Les VLANs ne communiquaient pas entre eux malgré la configuration du 3560. Les pings entre machines sur des VLANs différents échouaient systématiquement.
+              </div>
+              <div class="pb-item" data-n="02">
+                <strong>EtherChannel non fonctionnel</strong>
+                L'agrégation de liens entre les deux 2960 ne montait pas. Le port-channel restait en état "down" même après configuration des deux côtés.
+              </div>
+              <div class="pb-item" data-n="03">
+                <strong>DNS cache ne résolvait pas</strong>
+                BIND9 était installé et démarré mais les clients du réseau ne pouvaient pas résoudre les noms de domaine via le serveur.
+              </div>
+            </div>
+          </div>
+          <div class="pb-col">
+            <div class="pb-col-header header-solution">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Solutions
+            </div>
+            <div class="pb-items">
+              <div class="pb-item" data-n="01">
+                <strong>Oubli de <code>ip routing</code> sur le 3560</strong>
+                Le commutateur L2/L3 n'avait pas le routage IP activé. Une simple commande <code>ip routing</code> en mode global a résolu le problème. J'ai aussi vérifié que les interfaces SVI étaient bien en état "up/up".
+              </div>
+              <div class="pb-item" data-n="02">
+                <strong>Modes LACP non concordants</strong>
+                Un côté était configuré en <code>mode active</code> et l'autre en <code>mode on</code> — incompatibles. En mettant les deux en <code>mode active</code>, le port-channel est monté immédiatement.
+              </div>
+              <div class="pb-item" data-n="03">
+                <strong>Directive <code>allow-query</code> manquante</strong>
+                BIND9 par défaut n'accepte que les requêtes locales. J'ai ajouté <code>allow-query { any; };</code> dans <code>named.conf.options</code> pour autoriser tout le réseau.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">03</span>
+          <h2 class="sae-block-title">Ce que j'ai appris &amp; bilan</h2>
+        </div>
+        <div class="bilan-chips">
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">SAVOIR</span>
+            <div class="bilan-chip-text"><strong>Vision d'ensemble d'une infrastructure réseau</strong>Comprendre comment les couches s'articulent : câblage physique, commutation L2, routage L3, services applicatifs — et diagnostiquer les problèmes couche par couche.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">FAIRE</span>
+            <div class="bilan-chip-text"><strong>Administration Cisco IOS</strong>Maîtrise des commandes de configuration et de diagnostic (show, debug) pour les switches Catalyst et les routeurs Cisco dans un contexte d'entreprise.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">FAIRE</span>
+            <div class="bilan-chip-text"><strong>Déploiement de services Linux</strong>Installation et configuration d'Apache2, vsftpd, BIND9 et tftpd-hpa sur Debian — services fondamentaux d'une infrastructure réseau d'entreprise.</div>
+          </div>
+        </div>
+        <div class="niveau-bar-wrap">
+          <span class="niveau-label">Niveau RT1</span>
+          <div class="niveau-bar"><div class="niveau-fill" style="width:60%"></div></div>
+          <span class="niveau-pct">Satisfaisant</span>
+          <span class="niveau-comment">Bonne maîtrise de la commutation et du routage statique. Le routage dynamique (OSPF, BGP) et la gestion de réseaux plus complexes restent des axes de progression pour les semestres suivants.</span>
+        </div>
+      </div>
+
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">04</span>
+          <h2 class="sae-block-title">Preuves &amp; livrables</h2>
+        </div>
+        <div class="preuves-grid">
+          <div class="preuve-card">
+            <img src="schema_logique.png" alt="Schéma logique réseau" class="preuve-card-img" />
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Architecture réseau · Visio</div>
+              <div class="preuve-card-title">Schéma logique — VLANs, adressage &amp; topologie</div>
+              <div class="preuve-card-desc">Schéma Visio de la topologie réseau complète : 4 PC, 2 switches L2 (SW1 &amp; SW2), 1 switch L2/L3, routeur, serveur Proxmox et VM Debian avec plan d'adressage IPv4 172.17.x.x.</div>
+            </div>
+          </div>
+          <div class="preuve-card">
+            <iframe class="preuve-card-pdf" src="livrables_sae02.pdf" title="Livrables SAÉ 1.02"></iframe>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Rapport de projet</div>
+              <div class="preuve-card-title">Livrables SAÉ 1.02 — Configurations &amp; documentation</div>
+              <div class="preuve-card-desc">Document complet des livrables : configurations Cisco IOS exportées (switches 2960, 3560, routeur 2911), plan d'adressage et documentation technique du projet réseau.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sae-page-nav-btns">
+        <a href="sae-01.html" class="btn-secondary">← SAÉ 1.01</a>
+        <a href="sae-03.html" class="btn-primary">SAÉ 1.03 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RT Portfolio</span>
+      <span class="footer-mention">IUT Grand Ouest Normandie · BUT Réseaux &amp; Télécommunications · 2024–2025</span>
+      <span class="footer-copy">Portfolio académique</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

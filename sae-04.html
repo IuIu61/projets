@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAÉ 1.04 — Portfolio R&T</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">RT Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li class="nav-sae-menu">
+        <button class="nav-sae-trigger">
+          SAÉ
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-sae-dropdown">
+          <a href="saes.html" class="dd-all">↗ Toutes les SAÉ</a>
+          <div class="dd-sep"></div>
+          <a href="sae-01.html"><span class="dd-num">1.01</span>Hygiène &amp; Cybersécurité</a>
+          <a href="sae-02.html"><span class="dd-num">1.02</span>Réseaux informatiques</a>
+          <a href="sae-03.html"><span class="dd-num">1.03</span>Dispositif de transmission</a>
+          <a href="sae-04.html"><span class="dd-num">1.04</span>Se présenter sur Internet</a>
+          <a href="sae-05.html"><span class="dd-num">1.05</span>Traiter des données</a>
+        </div>
+      </li>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="index.html#bilans">Bilans</a></li>
+      <li><a href="index.html#presentation">Profil</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="sae-page-hero">
+    <div class="container">
+      <div class="sae-page-eyebrow">
+        <span class="sae-page-num">SAÉ 1.04</span>
+        <span class="sae-page-badge">Compétence RT3 · Coeff. 8</span>
+      </div>
+      <h1 class="sae-page-title">Se présenter sur Internet</h1>
+      <p class="sae-page-sub">Concevoir et réaliser un site web multipage en HTML/CSS dans le cadre de la ressource R1.15 — Gestion de projet. Site responsive, conforme aux standards W3C et WCAG 2.0 AA, avec animations CSS et hébergement GitHub Pages. Ce portfolio est le livrable de cette SAÉ.</p>
+      <div class="sae-page-ac">
+        <span class="ac-tag">HTML5 / CSS3</span>
+        <span class="ac-tag">Flexbox / CSS Grid</span>
+        <span class="ac-tag">Responsive Design</span>
+        <span class="ac-tag">WCAG 2.0 AA</span>
+        <span class="ac-tag">Animations CSS</span>
+        <span class="ac-tag">GitHub Pages</span>
+        <span class="ac-tag">Gestion de projet</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="sae-page-main">
+    <div class="container">
+      <div class="sae-page-grid">
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">01</div>
+          <div class="sae-section-content">
+            <h2>Contexte &amp; Objectifs</h2>
+            <p><strong>Projet :</strong> Dans le cadre de la SAÉ 1.04 et de la ressource R1.15 «Gestion de projet : Maîtriser les bases», réaliser un site web multipage au thème libre. J'ai choisi de créer un portfolio académique présentant l'ensemble de mes SAÉ du semestre 1, ce qui constituait à la fois un livrable utile et un exercice complet de développement web.</p>
+            <p><strong>Cahier des charges :</strong> Minimum 3 pages, charte graphique cohérente, validation W3C, responsive (mobile/tablette/ordinateur), animations CSS, hébergement GitHub Pages, commits porteurs de sens, README.md détaillé.</p>
+            <p><strong>Notation :</strong> Design et UX/UI (4 pts), contenus et rédactionnel (4 pts), respect du cahier des charges (6 pts), livrables R1.15 — WBS, rétroplanning, tableau de suivi (6 pts).</p>
+          </div>
+        </section>
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">02</div>
+          <div class="sae-section-content">
+            <h2>Exigences techniques ciblées</h2>
+            <ul class="sae-ac-list">
+              <li><strong>Structure HTML sémantique :</strong> Utilisation des balises HTML5 (<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>), arborescence cohérente avec 8 pages interconnectées.</li>
+              <li><strong>CSS avancé :</strong> CSS Grid et Flexbox pour la mise en page, variables CSS (<code>:root</code>) pour la charte graphique, media queries pour le responsive design.</li>
+              <li><strong>Animations CSS :</strong> <code>@keyframes</code> pour les animations d'entrée (<code>fadeUp</code>), transitions sur les cartes et la navigation, effet de défilement sur la barre de navigation.</li>
+              <li><strong>Accessibilité WCAG 2.0 AA :</strong> Ratio de contraste texte/fond vérifié (minimum 4.5:1), attributs <code>aria-label</code> sur les boutons sans texte, navigation au clavier fonctionnelle.</li>
+              <li><strong>Versioning et déploiement :</strong> Repository GitHub avec commits atomiques et messages descriptifs, hébergement automatique via GitHub Pages.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">03</div>
+          <div class="sae-section-content">
+            <h2>Ma contribution &amp; tâches réalisées</h2>
+            <p><strong>Conception du design :</strong> J'ai opté pour une esthétique sombre et minimaliste inspirée des portfolios de développeurs, avec une palette basée sur des bleus désaturés (<code>#7eb8d4</code>) et des tons chaleureux (<code>#c4a882</code>). La typographie associe Cormorant Garamond (empattements, titres) et DM Mono (monospace, étiquettes), donnant un caractère à la fois technique et élégant.</p>
+            <p><strong>Architecture des pages :</strong> J'ai structuré le site avec une page d'accueil (<code>index.html</code>), une page dédiée aux SAÉ (<code>saes.html</code>) et cinq pages détail (<code>sae-01.html</code> à <code>sae-05.html</code>). La navigation est universelle et accessible depuis toutes les pages via un menu déroulant.</p>
+            <p><strong>Gestion de projet R1.15 :</strong> J'ai créé un WBS décomposant le projet en phases (conception, développement, tests, déploiement), un rétroplanning sur 4 semaines et un tableau Kanban sur Trello pour le suivi des tâches.</p>
+            <p><strong>Déploiement :</strong> Le site est hébergé sur GitHub Pages. J'ai effectué plus de 20 commits avec des messages descriptifs (ex. : « feat: add dropdown nav with SAE links », « fix: improve mobile menu accessibility »).</p>
+          </div>
+        </section>
+
+        <section class="sae-section reveal">
+          <div class="sae-section-label">04</div>
+          <div class="sae-section-content">
+            <h2>Traces &amp; livrables</h2>
+            <ul class="sae-traces-list">
+              <li>Site web multipage (8 pages) en HTML/CSS — ce portfolio hébergé sur GitHub Pages</li>
+              <li>Repository GitHub avec historique de commits significatifs (&gt;20 commits)</li>
+              <li>README.md détaillé (présentation du projet, technologies, lien hébergement)</li>
+              <li>WBS du projet (décomposition des tâches)</li>
+              <li>Rétroplanning sur 4 semaines</li>
+              <li>Tableau Kanban Trello — suivi d'avancement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sae-section highlight-section reveal">
+          <div class="sae-section-label">05</div>
+          <div class="sae-section-content">
+            <h2>Analyse réflexive</h2>
+            <p><strong>Difficultés rencontrées :</strong> La mise en place du menu déroulant accessible depuis toutes les pages a été plus complexe que prévu — les interactions CSS pur (<code>:hover</code>) ne fonctionnant pas sur mobile, il a fallu basculer vers une solution JavaScript. La validation W3C a également révélé plusieurs erreurs d'imbrication de balises, notamment autour des éléments <code>&lt;a&gt;</code> contenant des <code>&lt;article&gt;</code>, ce qui n'est pas valide en HTML5.</p>
+            <p><strong>Solutions apportées :</strong> J'ai restructuré le HTML pour envelopper les articles dans des liens plutôt que l'inverse, ce qui a résolu les erreurs W3C. Pour le menu mobile, j'ai implémenté un toggle JavaScript qui gère l'ouverture/fermeture du menu burger avec des animations CSS sur les spans.</p>
+            <p><strong>Ce que j'ai appris :</strong> Cette SAÉ m'a appris le cycle complet de création d'un site web professionnel, de la conception à la mise en ligne. J'ai découvert l'importance des variables CSS pour maintenir une charte cohérente, et la puissance des animations CSS <code>@keyframes</code> pour donner vie aux interfaces. La gestion de projet avec un WBS et un rétroplanning m'a aidé à structurer mon temps et à respecter les délais.</p>
+            <p><strong>Positionnement personnel :</strong> Je me situe à un bon niveau sur RT3 pour le développement web front-end. L'étape suivante est l'apprentissage de JavaScript plus avancé et éventuellement d'un framework CSS ou JS pour des projets plus ambitieux.</p>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="sae-preuves reveal">
+        <div class="sae-preuves-title">Preuves &amp; traces</div>
+        <div class="preuves-grid">
+
+          <div class="preuve-card">
+            <div class="preuve-placeholder">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Capture d'écran à ajouter</span>
+            </div>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Livrable principal</div>
+              <div class="preuve-card-title">Capture de la page d'accueil du site</div>
+              <div class="preuve-card-desc">
+                À ajouter : une capture d'écran pleine page de la page d'accueil de votre site (ce portfolio) dans son état final, illustrant le design, la charte graphique et la mise en page responsive.
+              </div>
+            </div>
+          </div>
+
+          <div class="preuve-card">
+            <div class="preuve-placeholder">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Capture d'écran à ajouter</span>
+            </div>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Conformité standards</div>
+              <div class="preuve-card-title">Résultat validateur W3C — 0 erreur</div>
+              <div class="preuve-card-desc">
+                À ajouter : une capture du résultat du validateur W3C (validator.w3.org) montrant 0 erreur et 0 avertissement sur le HTML de votre page d'accueil.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sae-page-nav-btns">
+        <a href="sae-03.html" class="btn-secondary">← SAÉ 1.03</a>
+        <a href="sae-05.html" class="btn-primary">SAÉ 1.05 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RT Portfolio</span>
+      <span class="footer-mention">IUT Grand Ouest Normandie · BUT Réseaux & Télécommunications · 2024–2025</span>
+      <span class="footer-copy">Portfolio académique</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

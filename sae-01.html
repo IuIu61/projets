@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAÉ 1.01 — Portfolio R&T</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">RT Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li class="nav-sae-menu">
+        <button class="nav-sae-trigger">SAÉ
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-sae-dropdown">
+          <a href="saes.html" class="dd-all">↗ Toutes les SAÉ</a>
+          <div class="dd-sep"></div>
+          <a href="sae-01.html"><span class="dd-num">1.01</span>Hygiène &amp; Cybersécurité</a>
+          <a href="sae-02.html"><span class="dd-num">1.02</span>Réseaux informatiques</a>
+          <a href="sae-03.html"><span class="dd-num">1.03</span>Dispositif de transmission</a>
+          <a href="sae-04.html"><span class="dd-num">1.04</span>Se présenter sur Internet</a>
+          <a href="sae-05.html"><span class="dd-num">1.05</span>Traiter des données</a>
+        </div>
+      </li>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="index.html#bilans">Bilans</a></li>
+      <li><a href="index.html#presentation">Profil</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="sae-page-hero">
+    <div class="container">
+      <div class="sae-page-eyebrow">
+        <span class="sae-page-num">SAÉ 1.01</span>
+        <span class="sae-page-badge">Compétence RT1 · Coeff. 10</span>
+      </div>
+      <h1 class="sae-page-title">Se sensibiliser à l'hygiène informatique<br/><em>et à la cybersécurité</em></h1>
+      <p class="sae-page-sub">Formation individuelle au MOOC ANSSI, travail de recherche en groupe sur les thématiques cyber, TP Capture the Flag et micro-certification OpenBadge.</p>
+      <div class="sae-page-ac">
+        <span class="ac-tag">MOOC ANSSI</span>
+        <span class="ac-tag">SSH</span>
+        <span class="ac-tag">Fail2Ban</span>
+        <span class="ac-tag">Clés asymétriques</span>
+        <span class="ac-tag">CTF</span>
+        <span class="ac-tag">OpenBadge</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEXTE -->
+  <div class="sae-context">
+    <div class="container">
+      <div class="sae-context-inner">
+        <div class="sae-context-item">
+          <div class="sae-context-label">Problématique professionnelle</div>
+          <div class="sae-context-text">Le technicien R&T est souvent le premier interlocuteur des nouveaux arrivants en entreprise. Il doit les sensibiliser aux bonnes pratiques numériques, leur faire adopter les bons réflexes et leur présenter la charte informatique de la DSI.</div>
+        </div>
+        <div class="sae-context-item">
+          <div class="sae-context-label">Mission</div>
+          <div class="sae-context-text">Suivre le MOOC SecNumacadémie de l'ANSSI (4 modules), travailler en groupe sur une thématique cyber (Lot B : accès SSH), présenter le travail à l'oral, réaliser un TP CTF et passer un QCM pour obtenir une micro-certification.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="sae-body">
+    <div class="container">
+
+      <!-- BLOC 1 : MÉTHODOLOGIE -->
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">01</span>
+          <h2 class="sae-block-title">Méthodologie utilisée</h2>
+        </div>
+        <div class="methodo-steps">
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Formation individuelle — MOOC SecNumacadémie</div>
+              <div class="methodo-step-desc">J'ai suivi les 4 modules du MOOC de l'ANSSI en autonomie sur la plateforme secnumacademie.gouv.fr. Pour chaque module, j'ai d'abord regardé les vidéos, puis effectué les exercices interactifs avant de passer l'évaluation. J'ai pris des notes sur les points clés pour préparer le QCM final.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Recherche en groupe — Lot B : Accès SSH</div>
+              <div class="methodo-step-desc">Mon groupe (3 personnes) a travaillé sur le Lot B. Nous avons d'abord réparti les sujets : fonctionnement du protocole, durcissement de la configuration (<code>sshd_config</code>, <code>Fail2Ban</code>), et remplacement du mot de passe par clé publique/privée. J'ai pris en charge la partie clés asymétriques et la rédaction du document collaboratif.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Expérimentation sur VM Debian (Proxmox)</div>
+              <div class="methodo-step-desc">Pour valider nos recherches, nous avons monté deux VMs Debian sous Proxmox. J'ai configuré concrètement : changement du port SSH, désactivation de l'accès root, configuration de <code>Fail2Ban</code> avec un seuil à 3 tentatives, et génération d'une paire de clés Ed25519 avec <code>ssh-keygen</code> puis dépôt de la clé publique via <code>ssh-copy-id</code>.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">Présentation orale de groupe</div>
+              <div class="methodo-step-desc">Lors de la séance encadrée, chaque groupe a présenté son lot. J'ai présenté la section sur les clés asymétriques en m'appuyant sur une analogie du cadenas ouvert pour rendre le mécanisme accessible. La présentation incluait une démonstration en direct de la connexion SSH par clé.</div>
+            </div>
+          </div>
+
+          <div class="methodo-step">
+            <div class="methodo-step-dot"></div>
+            <div class="methodo-step-body">
+              <div class="methodo-step-title">TP Capture the Flag (2h)</div>
+              <div class="methodo-step-desc">Le CTF comportait des challenges de difficulté croissante sur la stéganographie, les mots de passe faibles et l'analyse de trafic réseau. J'ai abordé chaque challenge méthodiquement : lecture de l'énoncé, identification de la technique à exploiter, test et validation du flag.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BLOC 2 : PROBLÈMES / SOLUTIONS -->
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">02</span>
+          <h2 class="sae-block-title">Problèmes rencontrés &amp; solutions apportées</h2>
+        </div>
+        <div class="pb-sol-grid">
+          <div class="pb-col">
+            <div class="pb-col-header header-problem">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Problèmes
+            </div>
+            <div class="pb-items">
+              <div class="pb-item" data-n="01">
+                <strong>Fail2Ban ne bloquait pas les IP</strong>
+                Après installation, les tentatives de connexion répétées n'étaient pas bloquées. Le service tournait mais aucune règle iptables n'était créée.
+              </div>
+              <div class="pb-item" data-n="02">
+                <strong>Connexion SSH refusée après changement de port</strong>
+                En changeant le port SSH dans <code>sshd_config</code>, je me suis retrouvé bloqué hors de la VM sans pouvoir me reconnecter.
+              </div>
+              <div class="pb-item" data-n="03">
+                <strong>Comprendre le mécanisme de chiffrement pour l'oral</strong>
+                L'échange Diffie-Hellman et la notion de clé de session étaient difficiles à expliquer de façon simple et accessible à un public non-technique.
+              </div>
+            </div>
+          </div>
+          <div class="pb-col">
+            <div class="pb-col-header header-solution">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Solutions
+            </div>
+            <div class="pb-items">
+              <div class="pb-item" data-n="01">
+                <strong>Correction du fichier jail.local</strong>
+                Le fichier <code>jail.conf</code> n'est pas censé être modifié directement. J'ai créé un fichier <code>jail.local</code> avec la section <code>[sshd]</code> activée et <code>backend = systemd</code>, ce qui a résolu le problème.
+              </div>
+              <div class="pb-item" data-n="02">
+                <strong>Ouvrir le nouveau port AVANT de redémarrer sshd</strong>
+                J'ai appris à toujours d'abord tester la nouvelle config avec <code>sshd -t</code>, ouvrir le nouveau port dans le pare-feu, puis redémarrer le service — en gardant la session courante ouverte jusqu'à confirmation.
+              </div>
+              <div class="pb-item" data-n="03">
+                <strong>Analogie du cadenas ouvert</strong>
+                J'ai utilisé la métaphore d'un cadenas ouvert qu'on envoie à son interlocuteur : il l'utilise pour verrouiller son message, mais seul moi possède la clé pour l'ouvrir. Cette analogie a bien fonctionné à l'oral.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOC 3 : CE QUE J'AI APPRIS + NIVEAU -->
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">03</span>
+          <h2 class="sae-block-title">Ce que j'ai appris &amp; bilan</h2>
+        </div>
+        <div class="bilan-chips">
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">SAVOIR</span>
+            <div class="bilan-chip-text"><strong>Vecteurs d'attaque courants</strong>Connaissance concrète des attaques par force brute, par dictionnaire et par écoute passive, et des contre-mesures associées.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">FAIRE</span>
+            <div class="bilan-chip-text"><strong>Configuration SSH sécurisée</strong>Maîtrise de la configuration <code>sshd_config</code>, de <code>Fail2Ban</code> et de la génération/déploiement de clés Ed25519 sur une machine Debian.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">FAIRE</span>
+            <div class="bilan-chip-text"><strong>Sensibilisation non-technique</strong>Capacité à vulgariser des mécanismes cryptographiques complexes pour un public non-spécialiste, compétence directement utile en entreprise.</div>
+          </div>
+          <div class="bilan-chip">
+            <span class="bilan-chip-icon">POSTURE</span>
+            <div class="bilan-chip-text"><strong>Autonomie et rigueur</strong>Travail en grande partie en autonomie (12h sans enseignant), nécessitant de s'organiser, de chercher seul la documentation et de valider ses propres résultats.</div>
+          </div>
+        </div>
+        <div class="niveau-bar-wrap">
+          <span class="niveau-label">Niveau RT1</span>
+          <div class="niveau-bar"><div class="niveau-fill" style="width:55%"></div></div>
+          <span class="niveau-pct">Intermédiaire</span>
+          <span class="niveau-comment">Je maîtrise la configuration SSH sécurisée et les outils d'audit basiques. Les protocoles de chiffrement avancés et la cryptographie appliquée restent des axes de progression pour les prochaines SAÉ.</span>
+        </div>
+      </div>
+
+      <!-- BLOC 4 : PREUVES -->
+      <div class="sae-block reveal">
+        <div class="sae-block-header">
+          <span class="sae-block-num">04</span>
+          <h2 class="sae-block-title">Preuves &amp; livrables</h2>
+        </div>
+        <div class="preuves-grid">
+
+          <div class="preuve-card">
+            <iframe class="preuve-card-pdf" src="certif_mooc.pdf" title="Certificat MOOC ANSSI"></iframe>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">Certification officielle · ANSSI · 23/10/2025</div>
+              <div class="preuve-card-title">Attestation SecNumacadémie</div>
+              <div class="preuve-card-desc">Scores : Panorama SSI <strong>92 %</strong> · Authentification <strong>84 %</strong> · Sécurité Internet <strong>88 %</strong> · Poste de travail &amp; nomadisme <strong>84 %</strong>.</div>
+            </div>
+          </div>
+
+          <div class="preuve-card">
+            <div class="preuve-placeholder">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Capture d'écran à ajouter</span>
+            </div>
+            <div class="preuve-card-body">
+              <div class="preuve-card-label">TP CTF</div>
+              <div class="preuve-card-title">Score final — Capture the Flag</div>
+              <div class="preuve-card-desc">Capture du tableau de bord CTF montrant les challenges résolus et le score final obtenu lors du TP de 2h.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sae-page-nav-btns">
+        <a href="saes.html" class="btn-secondary">← Retour aux SAÉ</a>
+        <a href="sae-02.html" class="btn-primary">SAÉ 1.02 <span class="arrow">→</span></a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RT Portfolio</span>
+      <span class="footer-mention">IUT Grand Ouest Normandie · BUT Réseaux &amp; Télécommunications · 2024–2025</span>
+      <span class="footer-copy">Portfolio académique</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

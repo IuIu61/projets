@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAÉ — Portfolio R&T</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">RT Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li class="nav-sae-menu">
+        <button class="nav-sae-trigger">
+          SAÉ
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-sae-dropdown">
+          <a href="saes.html" class="dd-all">↗ Toutes les SAÉ</a>
+          <div class="dd-sep"></div>
+          <a href="sae-01.html"><span class="dd-num">1.01</span>Hygiène &amp; Cybersécurité</a>
+          <a href="sae-02.html"><span class="dd-num">1.02</span>Réseaux informatiques</a>
+          <a href="sae-03.html"><span class="dd-num">1.03</span>Dispositif de transmission</a>
+          <a href="sae-04.html"><span class="dd-num">1.04</span>Se présenter sur Internet</a>
+          <a href="sae-05.html"><span class="dd-num">1.05</span>Traiter des données</a>
+        </div>
+      </li>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="index.html#bilans">Bilans</a></li>
+      <li><a href="index.html#presentation">Profil</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="saes-page-hero">
+    <div class="container">
+      <div class="sae-page-eyebrow">
+        <span class="sae-page-num">Semestre 1</span>
+        <span class="sae-page-badge">IUT Grand Ouest Normandie · BUT R&T · 2024–2025</span>
+      </div>
+      <h1 class="sae-page-title">Situations d'Apprentissage<br/><em>&amp; d'Évaluation</em></h1>
+      <p class="sae-page-sub">Cinq projets qui mobilisent les trois compétences du tronc commun — administrer, connecter, programmer. Chacun laisse une trace concrète de l'acquisition des savoirs professionnels R&T.</p>
+    </div>
+  </section>
+
+  <section class="saes-grid-section">
+    <div class="container">
+
+      <div class="saes-filter-bar">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="RT1">RT1 — Administrer</button>
+        <button class="filter-btn" data-filter="RT2">RT2 — Connecter</button>
+        <button class="filter-btn" data-filter="RT3">RT3 — Programmer</button>
+      </div>
+
+      <div class="saes-cards-grid">
+
+        <!-- SAÉ 1.01 -->
+        <a href="sae-01.html" class="sae-overview-card reveal" data-comp="RT1" style="text-decoration:none;color:inherit">
+          <div class="sae-ov-head">
+            <span class="sae-ov-num">SAÉ 1.01</span>
+            <span class="sae-ov-coeff">Coeff. 10</span>
+          </div>
+          <div class="sae-ov-competence">Compétence RT1 — Administrer</div>
+          <h2 class="sae-ov-title">Se sensibiliser à l'hygiène informatique et à la cybersécurité</h2>
+          <p class="sae-ov-desc">Formation ANSSI, travail de recherche en groupe sur les mots de passe, SSH ou scan réseau, TP Capture the Flag et micro-certification OpenBadge.</p>
+          <div class="sae-ov-tags">
+            <span class="ac-tag">MOOC ANSSI</span>
+            <span class="ac-tag">CTF</span>
+            <span class="ac-tag">SSH</span>
+            <span class="ac-tag">Scan réseau</span>
+          </div>
+          <span class="sae-ov-cta">Voir le détail →</span>
+        </a>
+
+        <!-- SAÉ 1.02 -->
+        <a href="sae-02.html" class="sae-overview-card reveal" data-comp="RT1" style="text-decoration:none;color:inherit">
+          <div class="sae-ov-head">
+            <span class="sae-ov-num">SAÉ 1.02</span>
+            <span class="sae-ov-coeff">Coeff. 31</span>
+          </div>
+          <div class="sae-ov-competence">Compétence RT1 — Administrer</div>
+          <h2 class="sae-ov-title">S'initier aux réseaux informatiques</h2>
+          <p class="sae-ov-desc">Déploiement d'un réseau d'entreprise complet : plan IPv4, VLANs, RSTP, agrégation de liens, routage statique, VM Debian multi-services.</p>
+          <div class="sae-ov-tags">
+            <span class="ac-tag">IPv4 / VLAN</span>
+            <span class="ac-tag">Cisco IOS</span>
+            <span class="ac-tag">RSTP</span>
+            <span class="ac-tag">Debian</span>
+          </div>
+          <span class="sae-ov-cta">Voir le détail →</span>
+        </a>
+
+        <!-- SAÉ 1.03 -->
+        <a href="sae-03.html" class="sae-overview-card reveal" data-comp="RT2" style="text-decoration:none;color:inherit">
+          <div class="sae-ov-head">
+            <span class="sae-ov-num">SAÉ 1.03</span>
+            <span class="sae-ov-coeff">Coeff. 36</span>
+          </div>
+          <div class="sae-ov-competence">Compétence RT2 — Connecter</div>
+          <h2 class="sae-ov-title">Découvrir un dispositif de transmission</h2>
+          <p class="sae-ov-desc">Caractérisation expérimentale de câbles coaxiaux, Ethernet et fibre optique FTTH : mesures DTF, NVP en régime impulsionnel et photométrie.</p>
+          <div class="sae-ov-tags">
+            <span class="ac-tag">Fibre optique</span>
+            <span class="ac-tag">Analyse DTF</span>
+            <span class="ac-tag">NVP</span>
+            <span class="ac-tag">Photométrie</span>
+          </div>
+          <span class="sae-ov-cta">Voir le détail →</span>
+        </a>
+
+        <!-- SAÉ 1.04 -->
+        <a href="sae-04.html" class="sae-overview-card reveal" data-comp="RT3" style="text-decoration:none;color:inherit">
+          <div class="sae-ov-head">
+            <span class="sae-ov-num">SAÉ 1.04</span>
+            <span class="sae-ov-coeff">Coeff. 8</span>
+          </div>
+          <div class="sae-ov-competence">Compétence RT3 — Programmer</div>
+          <h2 class="sae-ov-title">Se présenter sur Internet</h2>
+          <p class="sae-ov-desc">Conception et déploiement d'un site web multipage HTML/CSS responsive, accessible WCAG 2.0 AA, hébergé sur GitHub Pages — ce portfolio !</p>
+          <div class="sae-ov-tags">
+            <span class="ac-tag">HTML5/CSS3</span>
+            <span class="ac-tag">Responsive</span>
+            <span class="ac-tag">WCAG 2.0</span>
+            <span class="ac-tag">GitHub Pages</span>
+          </div>
+          <span class="sae-ov-cta">Voir le détail →</span>
+        </a>
+
+        <!-- SAÉ 1.05 -->
+        <a href="sae-05.html" class="sae-overview-card reveal" data-comp="RT3" style="text-decoration:none;color:inherit">
+          <div class="sae-ov-head">
+            <span class="sae-ov-num">SAÉ 1.05</span>
+            <span class="sae-ov-coeff">Coeff. 35</span>
+          </div>
+          <div class="sae-ov-competence">Compétence RT3 — Programmer</div>
+          <h2 class="sae-ov-title">Traiter des données</h2>
+          <p class="sae-ov-desc">Développement Python en binôme : collecte de données via l'API REST OpenStreetMap, traitement statistique et génération automatique d'un rapport Markdown/HTML.</p>
+          <div class="sae-ov-tags">
+            <span class="ac-tag">Python</span>
+            <span class="ac-tag">API REST</span>
+            <span class="ac-tag">JSON</span>
+            <span class="ac-tag">Markdown</span>
+          </div>
+          <span class="sae-ov-cta">Voir le détail →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">RT Portfolio</span>
+      <span class="footer-mention">IUT Grand Ouest Normandie · BUT Réseaux & Télécommunications · 2024–2025</span>
+      <span class="footer-copy">Portfolio académique</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
